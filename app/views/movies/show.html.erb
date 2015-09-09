@@ -1,19 +1,30 @@
-<p id="notice"><%= notice %></p>
+      <div class="row forms">
+        <div class="col s12 m12">
+          <div class="card hoverable">
+            <div class="card-content">
+              <h5><%= @movie.name %></h5></br>
+              <p id="notice"><%= notice %></p>
+              <p><img src="<%= @movie.poster %>"></p></br>
 
-<p>
-  <strong>Name:</strong>
-  <%= @movie.name %>
-</p>
+                <p>
+                  <strong>Release year:</strong>
+                  <%= @movie.release_year %>
+                </p>
+                <p>
+                  <strong>Genre:</strong>
+                  <%= @movie.genre.name %>
+                </p></br>
 
-<p>
-  <strong>Description:</strong>
-  <%= @movie.description %>
-</p>
-
-<p>
-  <strong>Genre:</strong>
-  <%= @movie.genre_id %>
-</p>
-
-<%= link_to 'Edit', edit_movie_path(@movie) %> |
-<%= link_to 'Back', movies_path %>
+                <p>
+                  <strong>Description:</strong>
+                  <%= @movie.description %>
+                </p></br>
+            </div>
+            <div class="card-action">
+              <%= link_to 'Edit', edit_movie_path(@movie) %>|
+              <%= link_to 'Back', movies_path %>
+            </div>
+          </div>
+        </div>
+      </div>
+            

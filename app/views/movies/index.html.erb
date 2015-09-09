@@ -1,34 +1,26 @@
 <p id="notice"><%= notice %></p>
-<div class="card-panel">
-  <h1>Featured Movies</h1>
+
+
+<div class="card">
+<h1 class="center">Featured Movies</h1>
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Genre</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @movies.each do |movie| %>
-      <tr>
-        <td><%= movie.name %></td>
-        <td><%= movie.description %></td>
-        <td><%= movie.genre_id %></td>
-        <td><%= link_to 'Show', movie %></td>
-        <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
-        <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="row">
+<% @movies.each do |movie| %>
+  <div class="col sm">
+    <div class="card hoverable">
+      <img class="poster" src="<%= movie.poster %>">
+      <div class="card-content">
+        <p><%= movie.name %></p>
+      </div>
+      <div class="card-action">
+        <%= link_to "More Info", movie, class: "btn btn-default" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
 
 <br>
 
-<%= link_to 'New Movie', new_movie_path %>
-
-
+<%= link_to 'New Movie', new_movie_path, class: "btn btn-primary" %>

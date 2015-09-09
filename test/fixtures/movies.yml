@@ -2,10 +2,14 @@
 
 one:
   name: MyString
+  release_year: MyString
   description: MyText
+  poster: MyString
   genre_id: 1
 
 two:
   name: MyString
+  release_year: MyString
   description: MyText
+  poster: MyString
   genre_id: 1
