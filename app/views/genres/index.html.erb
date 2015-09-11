@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <div class="card center">
   <h1>Featured Movies</h1>
@@ -9,9 +9,9 @@
 
         <div class="row">
           <% genre.movies.each do |movie| %>
-            <div class="col s12 m3">
+            <div class="col s8 m6 l3">
               <div class="card hoverable">
-                <img class="poster" src="<%= movie.poster %>">
+                <img class="poster img-responsive" src="<%= movie.poster %>">
                 <div class="card-content">
                   <p class="truncate"><%= movie.name %></p>
                 </div>
@@ -29,5 +29,3 @@
 
 
 <br>
-
-<%= link_to 'New Genre', new_genre_path %>
