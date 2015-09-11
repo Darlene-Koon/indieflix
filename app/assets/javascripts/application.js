@@ -15,3 +15,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$( document ).ready(function(){
+		    $(".button-collapse").sideNav();
+		    $('select').material_select();
+		    $('.slider').slider({full_width: true});
+	
+});

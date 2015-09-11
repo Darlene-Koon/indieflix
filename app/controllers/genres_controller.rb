@@ -5,6 +5,7 @@ class GenresController < ApplicationController
   # GET /genres.json
   def index
     @genres = Genre.all
+    @movies = Movie.all
   end
 
   # GET /genres/1
