@@ -1,5 +1,7 @@
 @import "materialize/components/color";
 @import "materialize";
+@import 'slick';
+@import 'slick-theme';
 
 body {
 	background-color: #006064 ;
@@ -36,9 +38,18 @@ body {
 	height: 70px;
 }
 
+.brand-logo img {
+	height: 50px;
+	padding-top: 5px;
+
+}
+
+
 .login {
 	background-image: url(http://1.bp.blogspot.com/-a9AfS4IavEU/VKLa4jRt0uI/AAAAAAAAVjM/H2-PdKYCXCA/s1600/sandiegonight.png);
 	background-size: cover;
 	
 }
+
+
 

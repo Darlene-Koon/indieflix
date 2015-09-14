@@ -19,6 +19,8 @@
                   <strong>Description:</strong>
                   <%= @movie.description %>
                 </p></br>
+
+                <iframe width="560" height="315" src="//www.youtube.com/embed/<%= @movie.youtube_id %>" frameborder="0" allowfullscreen></iframe> 
             </div>
             <div class="card-action">
               <%= link_to 'Edit', edit_movie_path(@movie) %>|
