@@ -22,5 +22,6 @@
 </div>
 
 <br>
-
+<% if current_user.admin? %>
 <%= link_to 'New Movie', new_movie_path, class: "btn red lighten-2" %>
+<% end %>

@@ -23,7 +23,9 @@
                 <iframe width="560" height="315" src="//www.youtube.com/embed/<%= @movie.youtube_id %>" frameborder="0" allowfullscreen></iframe> 
             </div>
             <div class="card-action">
-              <%= link_to 'Edit', edit_movie_path(@movie) %>|
+            <% if current_user.admin? %>
+              <%= link_to 'Edit', edit_movie_path(@movie) %>
+              <% end %> |
               <%= link_to 'Back', genres_path %>
             </div>
           </div>
