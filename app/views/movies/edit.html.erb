@@ -1,7 +1,17 @@
-<h1>Editing Movie</h1>
+<div class="row forms">
+        <div class="col s12 m12">
+          <div class="card white">
+            <div class="card-content">
+              <h1>Editing Movie</h1>
 
-<%= render 'form' %>
+              <%= render 'form' %>
+            </div>
+            <div class="card-action">
+              <%= link_to 'Show', @movie %> |
+	  <%= link_to 'Back', genres_path %>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<%= link_to 'Show', @movie %> |
-<%= link_to 'Back', movies_path %>
 
