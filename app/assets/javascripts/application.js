@@ -11,11 +11,13 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require materialize-sprockets
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
 //= require jquery.slick
+
 
 $( document ).ready(function(){
 		    $(".button-collapse").sideNav();
