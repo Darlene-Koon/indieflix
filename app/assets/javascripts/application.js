@@ -59,7 +59,11 @@ $( document ).ready(function(){
   ]
 });
 
-	
+	if ($('input.admin-switch').is(':checked')) { 
+          $('input.admin-switch').val("true");
+      } else {
+          $('input.admin-switch').val("false");
+      }
 });
 
 

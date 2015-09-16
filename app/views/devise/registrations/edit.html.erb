@@ -31,6 +31,21 @@
                 <%= f.password_field :current_password, autocomplete: "off" %>
               </div>
 
+              <div class="field">
+                <%= f.check_box :admin, checked = true %>
+                <%= f.label :admin %> <br />
+              </div></br>
+      
+              <!-- <div class="switch">
+                <label>
+                  off
+                  <input type="checkbox" for= :admin class="admin-switch">
+                  <span class="lever"></span>
+                  on
+                </label>
+              </div>
+              </br> -->
+
               <div class="actions">
                 <%= f.submit "Update" , class: "btn red lighten-2" %>
               </div>
