@@ -39,6 +39,7 @@ gem 'devise'
 gem 'httparty'
 gem "jquery-slick-rails"
 gem 'jquery-turbolinks'
+gem 'activeadmin', github: 'activeadmin'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
