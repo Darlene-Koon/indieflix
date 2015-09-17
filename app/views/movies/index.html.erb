@@ -2,7 +2,7 @@
 
 
 <div class="card">
-<h1 class="center">Featured Movies</h1>
+<h1 class="center">Movie Index</h1>
 </div>
 
 <div class="row">
@@ -22,6 +22,6 @@
 </div>
 
 <br>
-<% if current_user.admin? %>
+<% if current_user.admin?%>
 <%= link_to 'New Movie', new_movie_path, class: "btn red lighten-2" %>
 <% end %>
